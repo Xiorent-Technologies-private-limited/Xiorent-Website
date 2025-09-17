@@ -47,13 +47,12 @@ const Questions = [
       {/* FAQ list */}
       <div className="max-w-5xl mx-auto space-y-4">
   {Questions.map((item, idx) => (
-    <div key={idx}>
+    <div key={idx}  onClick={() => setShow(show === idx ? null : idx)}>
       <div
         className="flex justify-between items-center bg-black/20 border border-gray-600 rounded-full px-6 py-4 hover:border-white transition"
       >
         <span className="text-base md:text-lg">{item.q}</span>
         <ChevronDown
-          onClick={() => setShow(show === idx ? null : idx)}
           className={`text-gray-300 transition-transform duration-300 ${
             show === idx ? "rotate-180" : ""
           }`}
