@@ -163,7 +163,7 @@ This project is licensed under the MIT License.
 
 For project inquiries and technology consulting, please contact XioRent Technologies.
 
-**Website**: [XioRent Technologies](https://xiorent.com)
+**Website**: [XioRent Technologies](https://xiorent.com) ..
 **Email**: info@xiorent.com
 **Phone**: +1 (555) 123-4567
 
