@@ -4,22 +4,22 @@ import { World } from "@/components/ui/Globe";
 
 export default function GlobeDemo() {
   const globeConfig = {
-    pointSize: 3,
-    globeColor: "#1a1a2e",
+    pointSize: 1,
+    globeColor: "#2B184D", // Very dark blue-purple base
     showAtmosphere: true,
-    atmosphereColor: "#8B5CF6",
+    atmosphereColor: "#B5E8FF", // Bright cyan atmosphere
     atmosphereAltitude: 0.1,
-    emissive: "#1a1a2e",
-    emissiveIntensity: 0.1,
+    emissive: "#0A0A1F",
+    emissiveIntensity: 0.5,
     shininess: 0.9,
-    polygonColor: "rgba(139, 92, 246, 0.4)",
-    ambientLight: "#8B5CF6",
-    directionalLeftLight: "#ffffff",
-    directionalTopLight: "#ffffff",
-    pointLight: "#8B5CF6",
+    polygonColor: "rgba(0, 255, 255, 0.6)", // Brighter cyan polygons
+    ambientLight: "#00FFFF", // Bright cyan ambient light
+    directionalLeftLight: "#00FFFF", // Bright cyan directional light (left)
+    directionalTopLight: "#8A2BE2", // Bright blue-violet top light
+    pointLight: "#FF00FF", // Pure magenta point light
     arcTime: 2000,
-    arcLength: 0.8,
-    rings: 1,
+    arcLength: 1,
+    rings: 2,
     maxRings: 3,
     initialPosition: { lat: 0, lng: 0 },
     autoRotate: true,
@@ -29,7 +29,7 @@ export default function GlobeDemo() {
     showLabels: false,
   };
 
-  const colors = ["#8B5CF6", "#A855F7", "#EC4899", "#F59E0B"];
+  const colors = ["#55346E", "#8A2BE2", "#00FFFF", "#FF1493", "#9400D3", "#00BFFF"];
   const sampleArcs = [
     {
       order: 1,

@@ -42,7 +42,7 @@ export default function AnimatedBackground() {
     const initParticles = () => {
       particlesRef.current = [];
       const particleCount = Math.min(150, Math.floor((canvas.width * canvas.height) / 15000));
-      
+
       for (let i = 0; i < particleCount; i++) {
         particlesRef.current.push({
           x: Math.random() * canvas.width,
@@ -125,9 +125,30 @@ export default function AnimatedBackground() {
         className="absolute inset-0 w-full h-full"
         style={{ zIndex: 1 }}
       />
-      
+
       {/* Floating Elements */}
       <div className="absolute inset-0" style={{ zIndex: 2 }}>
+
+        <div
+          className="absolute -top-32 -right-32 w-[450px] h-[400px]
+                   bg-gradient-to-r from-purple-700 via-indigo-700 to-sky-400
+                   rounded-full blur-3xl opacity-20 pointer-events-none"
+        />
+        <div
+          className="absolute -top-10 -left-32 w-[450px] h-[400px]
+                   bg-gradient-to-r from-purple-700 via-indigo-700 to-sky-400
+                   rounded-full blur-3xl opacity-20 pointer-events-none"
+        />
+        <div
+          className="absolute -bottom-32 -right-32 w-[550px] h-[500px]
+                   bg-gradient-to-r from-purple-700 via-indigo-700 to-sky-400
+                   rounded-full blur-3xl opacity-40 pointer-events-none"
+        />
+        <div
+          className="absolute bottom-[700px] left-32 w-[660px] h-[800px]
+                   bg-gradient-to-r from-purple-700 via-indigo-700 to-sky-400
+                   rounded-full blur-3xl opacity-30 pointer-events-none"
+        />
         {/* Large floating orbs */}
         <motion.div
           className="absolute w-96 h-96 bg-purple-500/10 rounded-full blur-3xl"
@@ -143,7 +164,7 @@ export default function AnimatedBackground() {
           }}
           style={{ top: '10%', left: '10%' }}
         />
-        
+
         <motion.div
           className="absolute w-80 h-80 bg-blue-500/10 rounded-full blur-3xl"
           animate={{
@@ -248,40 +269,40 @@ export default function AnimatedBackground() {
           style={{ bottom: '30%', right: '30%' }}
         />
 
-            {/* Floating particles */}
-            {Array.from({ length: 20 }).map((_, i) => {
-              // Use a seeded random function for consistent positioning
-              const seededRandom = (seed: number) => {
-                const x = Math.sin(seed) * 10000;
-                return x - Math.floor(x);
-              };
-              
-              const left = seededRandom(i * 0.1) * 100;
-              const top = seededRandom(i * 0.1 + 100) * 100;
-              const duration = seededRandom(i * 0.1 + 200) * 3 + 2;
-              const delay = seededRandom(i * 0.1 + 300) * 2;
-              
-              return (
-                <motion.div
-                  key={i}
-                  className="absolute w-1 h-1 bg-white/30 rounded-full"
-                  animate={{
-                    y: [0, -100, 0],
-                    opacity: [0, 1, 0],
-                  }}
-                  transition={{
-                    duration: duration,
-                    repeat: Infinity,
-                    ease: "easeInOut",
-                    delay: delay
-                  }}
-                  style={{
-                    left: `${left}%`,
-                    top: `${top}%`,
-                  }}
-                />
-              );
-            })}
+        {/* Floating particles */}
+        {Array.from({ length: 20 }).map((_, i) => {
+          // Use a seeded random function for consistent positioning
+          const seededRandom = (seed: number) => {
+            const x = Math.sin(seed) * 10000;
+            return x - Math.floor(x);
+          };
+
+          const left = seededRandom(i * 0.1) * 100;
+          const top = seededRandom(i * 0.1 + 100) * 100;
+          const duration = seededRandom(i * 0.1 + 200) * 3 + 2;
+          const delay = seededRandom(i * 0.1 + 300) * 2;
+
+          return (
+            <motion.div
+              key={i}
+              className="absolute w-1 h-1 bg-white/30 rounded-full"
+              animate={{
+                y: [0, -100, 0],
+                opacity: [0, 1, 0],
+              }}
+              transition={{
+                duration: duration,
+                repeat: Infinity,
+                ease: "easeInOut",
+                delay: delay
+              }}
+              style={{
+                left: `${left}%`,
+                top: `${top}%`,
+              }}
+            />
+          );
+        })}
       </div>
     </>
   );
