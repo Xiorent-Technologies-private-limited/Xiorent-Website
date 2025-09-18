@@ -57,7 +57,7 @@ function Jobs() {
 ];
 
   return (
-    <div className="relative overflow-hidden text-center px-10">
+    <div className="relative overflow-hidden text-center py-20 px-10">
         <div
         className="absolute -top-32 -left-32 w-[550px] h-[500px]
                    bg-gradient-to-r from-purple-700 via-indigo-700 to-sky-400
@@ -74,10 +74,10 @@ function Jobs() {
             />
         </div>
 
-        <div className="flex justify-center items-center gap-40 mt-10">
-            <button className="bg-clip-text font-mono text-transparent bg-gradient-to-r from-purple-600 to to-blue-500 text-lg">All Recent Jobs</button>
-            <button className="text-lg font-mono">Full time</button>
-            <button className="text-lg font-mono">Internships</button>
+        <div className="flex justify-center items-center gap-40 mt-10"  style={{ fontFamily: "var(--font-Manrope), sans-serif" }}>
+            <button className="bg-clip-text text-transparent bg-gradient-to-r from-[#C21CF9] via-[#4A14FE] to-[#01EFFE] text-2xl">All Recent Jobs</button>
+            <button className="text-2xl ">Full time</button>
+            <button className="text-2xl ">Internships</button>
         </div>
 
  <div className="mt-10 grid gap-8 md:grid-cols-2 lg:grid-cols-3">

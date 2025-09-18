@@ -21,14 +21,14 @@ function JobsCard({
  {
   return (
 <div className="gradient-border px-5">
-    <div className="flex justify-center items-center gap-5 mt-5">
+    <div className="flex justify-around items-center gap-5 mt-5">
         <button className="px-4 py-2 border rounded-xl">{location}</button>
         <button className="px-4 py-2 border rounded-xl">{type}</button>
         <button className="px-4 py-2 border rounded-xl">{stipend}</button>
     </div>
 
     <div className="mt-10 text-left">
-        <h1 className="text-3xl font-mono text-white">{title}</h1>
+        <h1 className="text-3xl text-white" style={{ fontFamily: "var(--font-orbitron), sans-serif" }}>{title}</h1>
         <p className="text-md text-gray-400 ">{desc}</p>
     </div>
 

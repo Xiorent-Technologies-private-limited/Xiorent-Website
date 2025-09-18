@@ -95,11 +95,11 @@ function TechnoServices() {
                 </motion.div>
 
                 {/* Services Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 gap-y-20 mb-20">
                     {services.map((service, index) => (
                         <motion.div
                             key={service.id}
-                            style={{ width: "90%" }}
+                            style={{ width: "100%" }}
                             className={`relative rounded-3xl overflow-hidden shadow-lg group h-72
          ${index % 2 === 0 ? "-translate-y-8" : "translate-y-8"}`}
                             initial={{ opacity: 0, y: 30 }}

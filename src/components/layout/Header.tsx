@@ -9,7 +9,7 @@ export function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <header className="absolute top-0 left-0 right-0 z-50 bg-black/20 backdrop-blur-md">
+    <header className="absolute top-0 left-0 right-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
@@ -43,7 +43,7 @@ export function Header() {
                   About Us
                 </Link>
                 <Link
-                  href="/services"
+                  href="/our-services"
                   className="text-white hover:text-purple-200 px-4 py-2 text-sm font-medium transition-colors"
                 >
                   Our Services
