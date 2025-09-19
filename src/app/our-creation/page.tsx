@@ -30,12 +30,10 @@ function page() {
                    rounded-full blur-3xl opacity-30 pointer-events-none"
         />
 
-        <Image src="/assets/tech-creations.png"
-          alt="heading"
-          width={700}
-          height={490}
-          className="mx-auto mt-5"
-        />
+<h1 className="text-5xl lg:text-6xl font-bold text-white text-center leading-tight" style={{ fontFamily: 'var(--font-orbitron), sans-serif' }}>
+              &quot;Tech-Driven Creations <br /> that matter&quot;
+            </h1>
+
 
         <Image
           src="/assets/creations-bg.png"

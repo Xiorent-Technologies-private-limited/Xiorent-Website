@@ -4,7 +4,7 @@ import Image from "next/image"
 
 function Alerts() {
   return (
-    <div className="relative overflow-hidden flex justify-center items-center px-10">
+    <div className="relative overflow-hidden flex justify-center items-center px-10 py-20">
         <div
         className="absolute -top-32 -right-32 w-[550px] h-[500px]
                    bg-gradient-to-r from-purple-700 via-indigo-700 to-sky-400

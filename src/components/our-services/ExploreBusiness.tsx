@@ -42,7 +42,7 @@ function ExploreBusiness() {
   ];
 
   return (
-    <div className="relative overflow-hidden">
+    <div className="relative overflow-hidden py-20">
 
          <div
         className="absolute -top-32 left-62 w-[550px] h-[500px]
@@ -65,7 +65,7 @@ function ExploreBusiness() {
       />
 
       {/* Services Section */}
-      <section className="py-16 px-6">
+      <section className="py-10 px-6">
         <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, idx) => (
             <div
@@ -82,10 +82,10 @@ function ExploreBusiness() {
                   className="object-contain"
                 />
               </div>
-              <h3 className="text-white font-bold font-mono text-lg tracking-wide">
+              <h3 className="text-white font-bold text-lg tracking-wide" style={{ fontFamily: "var(--font-orbitron), sans-serif" }}>
                 {service.title}
               </h3>
-              <p className="text-gray-300 text-sm font-mono leading-relaxed">
+              <p className="text-gray-300 text-sm leading-relaxed" style={{ fontFamily: "var(--font-Manrope), sans-serif" }}>
                 {service.description}
               </p>
             </div>

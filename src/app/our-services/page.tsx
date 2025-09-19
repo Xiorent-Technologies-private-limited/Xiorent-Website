@@ -11,33 +11,31 @@ function page() {
   return (
     <div className="relative overflow-hidden mt-10">
 
-        <div className="  flex justify-center items-center gap-10 bg-black ">
+        <div className="  flex justify-center items-center gap-20 bg-black ">
 
             <div
-        className="absolute top-12 -right-52 w-[550px] h-[500px]
+        className="absolute top-8 -right-52 w-[550px] h-[700px]
                    bg-gradient-to-r from-purple-700 via-indigo-700 to-sky-400
                    rounded-full blur-3xl opacity-40 pointer-events-none"
       />
 
        <div
-        className="absolute top-12 -left-52 w-[550px] h-[500px]
+        className="absolute top-8 -left-52 w-[550px] h-[700px]
                    bg-gradient-to-r from-purple-700 via-indigo-700 to-sky-400
                    rounded-full blur-3xl opacity-40 pointer-events-none z-5"
       />
 
-            <div className="py-5 relative left-32">
+            <div className="mt-10 relative left-32">
 
-      <Image src= "/assets/services-head1.png"
-                  alt="heading"
-                  width={500}
-                  height={500}
-                  className="mx-auto z-10"
-                  />
+      <h1 className="text-5xl lg:text-6xl font-bold text-white text-center leading-tight" style={{ fontFamily: 'var(--font-orbitron), sans-serif' }}>
+              Innovative <br /> Services That <br /> Drive Success
+            </h1>
+
     <Image src= "/assets/services-bg2.png"
             alt="heading"
             width={600}
             height={490}
-            className="mx-auto mt-5 z-0"
+            className="mx-auto z-0"
     />
 
                   </div>
@@ -47,7 +45,7 @@ function page() {
                 alt="heading"
                 width={1000}
                 height={700}
-                className=" mt-5 "
+                className=" mt-5  "
             />
 
     </div>
