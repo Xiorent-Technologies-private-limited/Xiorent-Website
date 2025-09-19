@@ -97,7 +97,7 @@ export function Header() {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden py-4 border-t border-white/20 bg-black/30 backdrop-blur-md">
+          <div className="md:hidden py-4">
             <div className="flex flex-col space-y-2">
               <Link
                 href="/"
@@ -114,7 +114,7 @@ export function Header() {
                 About Us
               </Link>
               <Link
-                href="/services"
+                href="/our-services"
                 className="text-white hover:text-purple-200 px-4 py-2 text-sm font-medium transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
