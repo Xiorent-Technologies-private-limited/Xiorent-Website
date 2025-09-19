@@ -1,7 +1,7 @@
 import React from "react";
 import { Header } from "./Header";
 import { Footer } from "./Footer";
-import AnimatedBackground from "../ui/AnimatedBackgorund";
+// import AnimatedBackground from "../ui/AnimatedBackgorund";
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -9,9 +9,9 @@ interface LayoutProps {
 
 export function Layout({ children }: LayoutProps) {
   return (
-    <div className="min-h-screen flex flex-col relative">
+    <div className="min-h-screen flex flex-col relative bg-[#050915]">
       {/* Animated Background */}
-      <AnimatedBackground />
+      {/* <AnimatedBackground /> */}
       
       {/* Header - positioned absolutely over content */}
       <Header />

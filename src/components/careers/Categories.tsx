@@ -8,7 +8,7 @@ function Categories() {
 
         <div
         className="absolute -bottom-32 -right-32 w-[550px] h-[500px]
-                   bg-gradient-to-r from-purple-700 via-indigo-700 to-sky-400
+bg-gradient-to-r from-[#1E92FF] via-[#1E92FF] via-[80%] to-[#1E92FF]
                    rounded-full blur-3xl opacity-20 pointer-events-none"
       />
 
@@ -66,19 +66,19 @@ function Categories() {
 </div>
 {/*  */}
 
-</div>
-</div>
-
-<div className="col-span-2 flex justify-center my-10">
-<button className="px-5 py-2 border border-white rounded-full flex items-center gap-2 hover:bg-white hover:text-black transition">
+<div className="col-span-2 flex justify-start items-start my-5">
+<button className="px-7 py-2 border border-white rounded-full flex justify-center items-center gap-5 hover:bg-white hover:text-black transition">
 Get Started  →
 </button>
 </div>
+</div>
+</div>
+
         <Image src= "/assets/cat-head2.png"
             alt="heading"
             width={600}
             height={490}
-            className="mx-auto mt-5 mb-10"
+            className="mx-auto mt-10"
         />
       
         <Image src= "/assets/cat-head3.png"

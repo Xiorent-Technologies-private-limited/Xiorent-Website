@@ -9,20 +9,19 @@ import Image from "next/image"
 
 function page() {
   return (
-    <div className="relative overflow-hidden mt-10">
+    <div className="relative overflow-hidden pt-20">
 
         <div className="  flex justify-center items-center gap-20 bg-black ">
 
-            <div
-        className="absolute top-8 -right-52 w-[550px] h-[700px]
-                   bg-gradient-to-r from-purple-700 via-indigo-700 to-sky-400
-                   rounded-full blur-3xl opacity-40 pointer-events-none"
+           <div
+        className="absolute top-12 -right-52 w-[400px] h-[700px]
+                   bg-gradient-to-t from-[#C30EFF]  to-[#1E92FF]/80
+                   rounded-full blur-3xl opacity-30 pointer-events-none"
       />
-
-       <div
-        className="absolute top-8 -left-52 w-[550px] h-[700px]
-                   bg-gradient-to-r from-purple-700 via-indigo-700 to-sky-400
-                   rounded-full blur-3xl opacity-40 pointer-events-none z-5"
+      <div
+        className="absolute top-12 -left-52 w-[400px] h-[700px]
+                   bg-gradient-to-b from-[#C30EFF] to-[#1E92FF]/80
+                   rounded-full blur-3xl opacity-30 pointer-events-none z-5"
       />
 
             <div className="mt-10 relative left-32">
