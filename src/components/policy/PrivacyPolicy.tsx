@@ -24,9 +24,11 @@ const PrivacyPolicy = () => {
           <a href="mailto:info@xiorent.com" className="text-blue-600 underline">
             info@xiorent.com
           </a>
+          <div className="border-b border-white mb-4"></div>
         </p>
+        
 
-      <div className="max-w-5xl mx-auto space-y-12 leading-relaxed">
+      <div className="max-w-5xl mx-auto space-y-12 leading-relaxed ">
         {/* Intro */}
         <section>
           <p>
