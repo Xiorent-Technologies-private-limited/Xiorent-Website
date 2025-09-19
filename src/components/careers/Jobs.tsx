@@ -59,8 +59,8 @@ function Jobs() {
   return (
     <div className="relative overflow-hidden text-center py-20 px-10">
         <div
-        className="absolute -top-32 -left-32 w-[550px] h-[500px]
-                   bg-gradient-to-r from-purple-700 via-indigo-700 to-sky-400
+        className="absolute -top-40 -left-32 w-[550px] h-[500px]
+bg-gradient-to-r from-[#C30EFF] via-[#1E92FF] via-[80%] to-[#1E92FF]
                    rounded-full blur-3xl opacity-20 pointer-events-none"
       />
 

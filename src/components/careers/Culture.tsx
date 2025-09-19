@@ -4,10 +4,10 @@ import Image from "next/image"
 
 function Culture() {
   return (
-    <div className="relative overflow-hidden mt-20 text-center px-10">
+    <div className="relative text-center pt-40 pb-20 p z-10">
       <div
-        className="absolute -bottom-32 -left-32 w-[550px] h-[500px]
-                   bg-gradient-to-r from-purple-700 via-indigo-700 to-sky-400
+        className="absolute -bottom-40 -left-32 w-[550px] h-[500px]
+bg-gradient-to-r from-[#C30EFF] via-[#1E92FF] via-[80%] to-[#1E92FF]
                    rounded-full blur-3xl opacity-20 pointer-events-none"
       />
 
@@ -15,10 +15,13 @@ function Culture() {
                           alt="heading"
                           width={600}
                           height={490}
-                          className="mx-auto mt-5"
+                          className="mx-auto "
       />
+      <h1 className='text-4xl font-bold text-center relative -top-24 mt-10'
+          style={{ fontFamily: "var(--font-Manrope), sans-serif" }}
+          >PEOPLE AND ENVIRONMENT</h1>
 
-      <div className="flex justify-center items-center mt-10 max-w-6xl mx-auto px-4 gap-10">
+      <div className="flex justify-center items-center mt-20 max-w-6xl mx-auto px-4 gap-20">
   <Image
     src="/assets/people.png"
     alt="heading"

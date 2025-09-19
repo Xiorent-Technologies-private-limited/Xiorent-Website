@@ -12,21 +12,29 @@ function page() {
   return (
     <div className="relative overflow-hidden pt-20">
        <div
-        className="absolute top-12 -right-52 w-[550px] h-[500px]
-                   bg-gradient-to-r from-purple-700 via-indigo-700 to-sky-400
-                   rounded-full blur-3xl opacity-40 pointer-events-none"
+        className="absolute top-12 -right-52 w-[400px] h-[700px]
+                   bg-gradient-to-t from-[#C30EFF]  to-[#1E92FF]/80
+                   rounded-full blur-3xl opacity-30 pointer-events-none"
       />
       <div
-        className="absolute top-12 -left-52 w-[550px] h-[500px]
-                   bg-gradient-to-r from-purple-700 via-indigo-700 to-sky-400
-                   rounded-full blur-3xl opacity-40 pointer-events-none"
+        className="absolute top-12 -left-52 w-[400px] h-[700px]
+                   bg-gradient-to-b from-[#C30EFF] to-[#1E92FF]/80
+                   rounded-full blur-3xl opacity-30 pointer-events-none"
       />
 
-     <div
-  className="w-full min-h-screen bg-center bg-no-repeat"
-  style={{ backgroundImage: "url('/assets/LooperBG1.png')" }}
->
-  <div className="flex justify-center items-center">
+    <div className="relative w-full min-h-screen overflow-hidden">
+  {/* Background image */}
+  <Image
+    src="/assets/LooperBG1.png"
+    alt="bg"
+    width={1600}
+    height={900}
+    className=" absolute -top-32 left-0 w-full
+     object-cover z-0"
+  />
+
+  {/* Foreground content */}
+  <div className="relative z-10 flex justify-center items-center">
     <Image
       src="/assets/carrers-head1.png"
       alt="heading"
@@ -42,15 +50,17 @@ function page() {
       className="mx-auto mt-5"
     />
   </div>
-      <div>
-        <button className="gradient-border relative bottom-20 left-20">
-            Explore Roles
-        </button>
-      </div>
+
+  <div className="relative z-10">
+    <button className="gradient-border relative bottom-20 left-20">
+      Explore Roles
+    </button>
+  </div>
+      <Culture/>
 </div>
 
 
-      <Culture/>
+
 
       <Jobs/>
 

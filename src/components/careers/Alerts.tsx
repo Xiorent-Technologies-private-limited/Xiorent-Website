@@ -7,7 +7,7 @@ function Alerts() {
     <div className="relative overflow-hidden flex justify-center items-center px-10 py-20">
         <div
         className="absolute -top-32 -right-32 w-[550px] h-[500px]
-                   bg-gradient-to-r from-purple-700 via-indigo-700 to-sky-400
+bg-gradient-to-t from-[#C30EFF] via-[#1E92FF] via-[80%] to-[#1E92FF]
                    rounded-full blur-3xl opacity-20 pointer-events-none"
       />
 
