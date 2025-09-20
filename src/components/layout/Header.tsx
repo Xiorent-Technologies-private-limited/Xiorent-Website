@@ -31,7 +31,7 @@ export function Header() {
             <div className="gradient-border">
               <div className="flex items-center space-x-1">
                 <Link
-                  href="/"
+                  href="/coming-soon"
                   className="text-white hover:text-purple-200 px-4 py-2 text-sm font-medium transition-colors"
                 >
                   Home
@@ -43,19 +43,19 @@ export function Header() {
                   About Us
                 </Link>
                 <Link
-                  href="/our-services"
+                  href="/coming-soon"
                   className="text-white hover:text-purple-200 px-4 py-2 text-sm font-medium transition-colors"
                 >
                   Our Services
                 </Link>
                 <Link
-                  href="/our-creation"
+                  href="/coming-soon"
                   className="text-white hover:text-purple-200 px-4 py-2 text-sm font-medium transition-colors"
                 >
                   Our Creations
                 </Link>
                 <Link
-                  href="/careers"
+                  href="/coming-soon"
                   className="text-white hover:text-purple-200 px-4 py-2 text-sm font-medium transition-colors"
                 >
                   Career
@@ -66,7 +66,7 @@ export function Header() {
 
           {/* Desktop Contact Button */}
           <div className="hidden md:flex items-center">
-            <Link href="/contact">
+            <Link href="/coming-soon">
               <Button 
                 variant="outline" 
                 size="sm"
