@@ -1,22 +1,27 @@
 import Image from "next/image";
-
-const CreateTogether = () => {
+import { ArrowRight } from "lucide-react";
+const LetsConnect = () => {
 
   return (
     <div className="mt-10 flex justify-center items-center gap-20 bg-center bg-no-repeat bg-cover"
-      style={{ backgroundImage: "url('/assets/wave-bg.png')" }}
+      style={{ backgroundImage: "url('/bg.png')" }}
     >
       <div className="text-center">
 
-        <Image src="/assets/ceate-head1.png"
+        <Image src="/Heading.png"
           alt="heading"
           width={600}
           height={490}
           className="mx-auto mt-5 mb-10"
         />
 
-        <button className="border px-5 py-2 rounded-full">
-          let&apos;s Connect
+        <button>
+          <Image
+            width={180}
+            height={50}
+            src="/letsconnect.png"
+            alt="Let's Connect"
+          />
         </button>
       </div>
 
@@ -67,4 +72,4 @@ const CreateTogether = () => {
   );
 };
 
-export default CreateTogether;
+export default LetsConnect;

@@ -59,7 +59,7 @@ export default function FutureSection() {
                 At Xiorent, we believe the future is built on innovation, intelligence, and bold ideas. As a forward-thinking tech partner, we transform concepts into cutting-edge digital solutions that empower businesses to stay ahead in a rapidly evolving world.
               </p>
               <p className="text-white/90 text-lg leading-relaxed">
-                From AI to custom software, our technologies are designed to be future-ready – scalable, secure, and smart. With Xiorent by your side, you're not just keeping up with the future – you're leading it.
+                From AI to custom software, our technologies are designed to be future-ready – scalable, secure, and smart. With Xiorent by your side, you&apos;re not just keeping up with the future – you&apos;re leading it.
               </p>
             </div>
 

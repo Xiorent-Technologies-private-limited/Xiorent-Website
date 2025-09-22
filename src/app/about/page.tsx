@@ -1,15 +1,17 @@
+import AboutTabs from "@/components/About/AboutTabs";
+import HeroSection from "@/components/Common/HeroSection";
+import Faq from "@/components/layout/Faq";
+// import Questions from "@/components/Common/Questions";
+import ProjectForm from "@/components/our-creations/ProjectForm";
+
 export default function About() {
-  return (
-    <div className="py-20 px-4">
-      <div className="max-w-4xl mx-auto">
-        <h1 className="text-4xl font-bold mb-8">About Us</h1>
-        
-        <div className="space-y-6">
-          <p>
-            This is about us.
-          </p>
+    return (
+        <div>
+            <HeroSection />
+            <AboutTabs />
+            <ProjectForm/>
+            {/* <Questions/> */}
+            <Faq/>
         </div>
-      </div>
-    </div>
-  );
+    );
 }
