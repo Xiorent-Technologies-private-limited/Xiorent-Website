@@ -23,7 +23,7 @@ function ProjectForm() {
                 WebkitTextFillColor: 'transparent'
               }}
             >
-              Let's Create together
+              Let&apos;s Create together
             </span>
           </h1>
           
@@ -32,7 +32,7 @@ function ProjectForm() {
           </p>
 
           <button className="inline-flex items-center gap-3 bg-transparent border-2 border-white text-white px-8 py-4 rounded-full font-medium text-lg hover:bg-white hover:text-gray-900 transition-all duration-300">
-            Let's Connect
+            Let&apos;s Connect
             <ArrowRight size={20} />
           </button>
         </div>
@@ -47,7 +47,7 @@ function ProjectForm() {
             backdropFilter: 'blur(8.893229484558105px)'
           }}
         >
-          <h2 className="text-2xl font-bold text-white mb-6">Let's Connect</h2>
+          <h2 className="text-2xl font-bold text-white mb-6">Let&apos;s Connect</h2>
           
           <form className="space-y-6 px-2">
             <div>

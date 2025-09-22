@@ -48,7 +48,7 @@ const DirectorProfile = () => {
               <p>
                 Anindya Sundar Pyne is the Director and Chief Marketing Officer of
                 Xiorent Technologies Private Limited, where he plays a pivotal
-                role in shaping the company's brand, market presence, and
+                role in shaping the company&apos;s brand, market presence, and
                 go-to-market strategy. As a co-founder, Anindya has been
                 instrumental in building the foundation of Xiorent—transforming
                 it from an ambitious startup into a technology powerhouse
@@ -56,7 +56,7 @@ const DirectorProfile = () => {
               </p>
 
               <p>
-                Anindya's journey into entrepreneurship was driven by a desire to
+                Anindya&apos;s journey into entrepreneurship was driven by a desire to
                 connect people and businesses with transformative technology. From
                 the early days of Xiorent, he focused on creating meaningful
                 narratives around AI, software development, blockchain, AR/VR,
@@ -71,7 +71,7 @@ const DirectorProfile = () => {
                 him a trusted voice within the leadership team, as well as a
                 mentor to the next generation of marketers and technologists
                 within Xiorent. His work continues to reflect a blend of vision,
-                empathy, and execution—making him a key architect of Xiorent's
+                empathy, and execution—making him a key architect of Xiorent&apos;s
                 ongoing success.
               </p>
             </div>

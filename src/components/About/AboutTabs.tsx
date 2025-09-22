@@ -1,12 +1,9 @@
 "use client";
 import React, { useState } from "react";
 import CompanyDirector from "./CompanyDirector";
-import Anindya from "./Anindya";
 import ManagementTeam from "../AboutTeam/ManagementTeam";
 import LeadingTeam from "../AboutTeam/LeadingTeam";
 import BusinessEthics from "../AboutEthics/BusinessEthics";
-import CreateTogether from "../layout/CreateTogether";
-import Faq from "../layout/Faq";
 import ComingSoon from "../Common/ComingSoon";
 
 const AboutTabs = () => {

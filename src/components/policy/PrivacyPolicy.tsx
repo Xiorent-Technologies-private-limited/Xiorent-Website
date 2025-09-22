@@ -30,8 +30,8 @@ const PrivacyPolicy = () => {
         {/* Intro */}
         <section>
           <p>
-            At <strong>Xiorent Technologies Private Limited</strong> ("we", "us",
-            or "our"), we are committed to protecting the privacy and personal
+            At <strong>Xiorent Technologies Private Limited</strong> (&quot;we&quot;, &quot;us&quot;,
+            or &quot;our&quot;), we are committed to protecting the privacy and personal
             data of our users, clients, and visitors. This Privacy Policy outlines
             how we collect, use, disclose, and protect your information when you
             interact with our website, services, or communications. By using our

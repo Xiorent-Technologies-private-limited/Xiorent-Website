@@ -1,5 +1,4 @@
 "use client";
-import Image from 'next/image'
 import React from 'react'
 import { motion } from "framer-motion";
 import { FaAws, FaJava, FaMicrosoft } from 'react-icons/fa6';
