@@ -8,7 +8,7 @@ export default function Home() {
     <>
       <HomeHeroSection />
       <TechnologyServicesSection />
-      <TechStackSection />
+      {/* <TechStackSection /> */}
       <FutureSection />
     </>
   );

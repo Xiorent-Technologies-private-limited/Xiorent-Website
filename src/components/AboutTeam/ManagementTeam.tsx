@@ -4,38 +4,9 @@ import { Facebook, Linkedin, Twitter } from "lucide-react";
 import Heading from "../Common/Heading";
 const CompanyTeam = () => {
   return (
-    <div className="min-h-screen  p-[120px]">
+    <div className="min-h-screen p-[120px]">
       <div className="max-w-7xl mx-auto relative">
         
-        {/* NAVBAR */}
-        <nav className="flex justify-between items-center mb-20">
-          <ul className="flex w-full justify-between text-base text-gray-400">
-            <li>
-              <a href="/about/bod" className="hover:text-white transition">
-                Board Of Directors
-              </a>
-            </li>
-            <li>
-              <a
-                href="/about/team"
-                className="relative pb-2 font-semibold text-white after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-gradient-to-r after:from-purple-500 after:to-cyan-400"
-              >
-                Our Team
-              </a>
-            </li>
-            <li>
-              <a href="/about/ethics" className="hover:text-white transition">
-                Code of Ethics
-              </a>
-            </li>
-            <li>
-              <a href="/coming-soon" className="hover:text-white transition">
-                Jobs
-              </a>
-            </li>
-          </ul>
-        </nav>
-
         {/* Header: MANAGEMENT + Team */}
         <Heading heading="Management" subHeading="Team" />
 

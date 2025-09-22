@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from '../../styles/components/Heading.module.css';
 
-const TeamMember = ({ heading, subHeading }) => {
+const TeamMember = ({ heading, subHeading }: { heading: string, subHeading: string }) => {
     return (
         <div className="text-center mb-20 relative">
             {/* COMPANY background word */}

@@ -5,38 +5,10 @@ import Heading from "../Common/Heading";
 
 const CompanyDirector = () => {
   return (
-    <div className="min-h-screen ">
+    <div className="min-h-screen">
       <div className="max-w-7xl mx-auto relative">
         
-        {/* NAVBAR */}
-        <nav className="flex justify-between items-center mb-20">
-          <ul className="flex w-full justify-between text-base text-gray-400">
-            <li>
-              <a
-                href="/about/bod"
-                className="relative pb-2 font-semibold text-white after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-white"
-              >
-                Board of Directors
-              </a>
-            </li>
-            <li>
-              <a href="/about/team" className="hover:text-white transition">
-                Our Team
-              </a>
-            </li>
-            <li>
-              <a href="/about/ethics" className="hover:text-white transition">
-                Code of Ethics
-              </a>
-            </li>
-            <li>
-              <a href="/coming-soon" className="hover:text-white transition">
-                Jobs
-              </a>
-            </li>
-          </ul>
-        </nav>
-
+       
         {/* Header: COMPANY + Directors */}
         <Heading heading={"Company"} subHeading={"Directors"}/>
 
@@ -44,15 +16,13 @@ const CompanyDirector = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-start">
           
           {/* LEFT: profile image */}
-
-            <div className="relative w-96 h-96">
-              <img
-                src="/Shivam.png" // transparent PNG
-                alt="Shivam Goswami"
-                className="relative w-96 h-96 object-contain left-40 top-20"
-              />
-            </div>
-
+          <div className="relative w-96 h-96">
+            <img
+              src="/Shivam.png"
+              alt="Shivam Goswami"
+              className="relative w-96 h-96 object-contain left-40 top-20"
+            />
+          </div>
 
           {/* RIGHT: content */}
           <div className="text-gray-300">
@@ -86,7 +56,7 @@ const CompanyDirector = () => {
                 learning, immersive technologies, and intelligent automation. At
                 Xiorent, he fosters an environment where creativity thrives and
                 diverse perspectives fuel progress. His belief in the power of
-                experimentation and continuous learning drives the company's
+                experimentation and continuous learning drives the company&apos;s
                 agile, solution-driven mindset.
               </p>
               <p>
