@@ -25,9 +25,9 @@ const AboutTabs = () => {
         return (
           <>
             <CompanyDirector />
-            <Anindya />
-            <CreateTogether />
-            <Faq />
+            {/* <Anindya /> */}
+            {/* <CreateTogether /> */}
+            {/* <Faq /> */}
           </>
         );
       case "team":
@@ -35,24 +35,24 @@ const AboutTabs = () => {
           <>
             <ManagementTeam />
             <LeadingTeam />
-            <CreateTogether />
-            <Faq />
+            {/* <CreateTogether /> */}
+            {/* <Faq /> */}
           </>
         );
       case "ethics":
         return (
           <>
             <BusinessEthics />
-            <CreateTogether />
-            <Faq />
+            {/* <CreateTogether /> */}
+            {/* <Faq /> */}
           </>
         );
       case "jobs":
         return (
           <>
             <ComingSoon />
-            <CreateTogether />
-            <Faq />
+            {/* <CreateTogether /> */}
+            {/* <Faq /> */}
           </>
         );
       default:
