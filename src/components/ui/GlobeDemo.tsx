@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-// import { World } from "@/components/ui/Globe";
+import { World } from "@/components/ui/Globe";
 
 export default function GlobeDemo() {
   const globeConfig = {
@@ -340,8 +340,11 @@ export default function GlobeDemo() {
   ];
 
   return (
-    <div className="w-full h-full flex items-center justify-center">
-      <div className="text-white/30 text-6xl">🌍</div>
+    <div className="w-full h-full">
+      <World 
+        data={sampleArcs} 
+        globeConfig={globeConfig}
+      />
     </div>
   );
 }

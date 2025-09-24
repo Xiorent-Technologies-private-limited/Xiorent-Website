@@ -3,86 +3,84 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-// import dynamic from "next/dynamic";
+import dynamic from "next/dynamic";
 import { AnimatedTooltip } from "@/components/ui/AnimatedTooltip";
 import { useEffect, useState } from "react";
 
-// Temporarily disabled Globe component due to Three.js compatibility issues
-// const GlobeDemo = dynamic(() => import("@/components/ui/GlobeDemo"), {
-//   ssr: false,
-//   loading: () => (
-//     <div className="w-full h-full flex items-center justify-center text-white">
-//       <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-purple-500"></div>
-//     </div>
-//   ),
-// });
+const GlobeDemo = dynamic(() => import("@/components/ui/GlobeDemo"), {
+  ssr: false,
+  loading: () => (
+    <div className="w-full h-full flex items-center justify-center text-white">
+      <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-purple-500"></div>
+    </div>
+  ),
+});
 
-// Error boundary component for globe - temporarily disabled
-// interface ErrorBoundaryProps {
-//   children: React.ReactNode;
-// }
+// Error boundary component for globe
+interface ErrorBoundaryProps {
+  children: React.ReactNode;
+}
 
-// interface ErrorBoundaryState {
-//   hasError: boolean;
-//   key: number;
-// }
+interface ErrorBoundaryState {
+  hasError: boolean;
+  key: number;
+}
 
-// class GlobeErrorBoundary extends React.Component<ErrorBoundaryProps, ErrorBoundaryState> {
-//   constructor(props: ErrorBoundaryProps) {
-//     super(props);
-//     this.state = { hasError: false, key: 0 };
-//   }
+class GlobeErrorBoundary extends React.Component<ErrorBoundaryProps, ErrorBoundaryState> {
+  constructor(props: ErrorBoundaryProps) {
+    super(props);
+    this.state = { hasError: false, key: 0 };
+  }
 
-//   static getDerivedStateFromError() {
-//     return { hasError: true };
-//   }
+  static getDerivedStateFromError() {
+    return { hasError: true };
+  }
 
-//   componentDidCatch(error: Error, errorInfo: React.ErrorInfo) {
-//     console.error('Globe rendering error:', error, errorInfo);
-//   }
+  componentDidCatch(error: Error, errorInfo: React.ErrorInfo) {
+    console.error('Globe rendering error:', error, errorInfo);
+  }
 
-//   render() {
-//     if (this.state.hasError) {
-//       return (
-//         <div className="w-full h-full flex items-center justify-center text-white">
-//           <button 
-//             onClick={() => this.setState({ hasError: false, key: this.state.key + 1 })}
-//             className="px-4 py-2 bg-purple-600 rounded-lg hover:bg-purple-700 transition-colors"
-//           >
-//             Retry Globe
-//           </button>
-//         </div>
-//       );
-//     }
+  render() {
+    if (this.state.hasError) {
+      return (
+        <div className="w-full h-full flex items-center justify-center text-white">
+          <button 
+            onClick={() => this.setState({ hasError: false, key: this.state.key + 1 })}
+            className="px-4 py-2 bg-purple-600 rounded-lg hover:bg-purple-700 transition-colors"
+          >
+            Retry Globe
+          </button>
+        </div>
+      );
+    }
 
-//     return <GlobeDemo key={this.state.key} />;
-//   }
-// }
+    return <GlobeDemo key={this.state.key} />;
+  }
+}
 
 export default function HomeHeroSection() {
-  // Globe-related state temporarily disabled
-  // const [globeKey, setGlobeKey] = useState(0);
-  // const [isGlobeReady, setIsGlobeReady] = useState(false);
+  const [globeKey, setGlobeKey] = useState(0);
+  const [isGlobeReady, setIsGlobeReady] = useState(false);
 
-  // Force globe re-render when component mounts or updates - temporarily disabled
-  // useEffect(() => {
-  //   const timer = setTimeout(() => {
-  //     setGlobeKey(prev => prev + 1);
-  //     setIsGlobeReady(true);
-  //   }, 200);
-  //   return () => clearTimeout(timer);
-  // }, []);
+  // Force globe re-render when component mounts or updates
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setGlobeKey(prev => prev + 1);
+      setIsGlobeReady(true);
+    }, 200);
+    return () => clearTimeout(timer);
+  }, []);
 
-  // Additional re-render trigger for better reliability - temporarily disabled
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     if (!isGlobeReady) {
-  //       setGlobeKey(prev => prev + 1);
-  //     }
-  //   }, 1000);
+  // Additional re-render trigger for better reliability
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (!isGlobeReady) {
+        setGlobeKey(prev => prev + 1);
+      }
+    }, 1000);
 
-  //   return () => clearInterval(interval);
-  // }, [isGlobeReady]);
+    return () => clearInterval(interval);
+  }, [isGlobeReady]);
 
   const teamMembers = [
     {
@@ -175,14 +173,14 @@ export default function HomeHeroSection() {
         
         {/* Right Side - Globe Background with Statistics Overlay */}
         <div className="w-1/2 relative z-0 flex items-center justify-center">
-          {/* Globe Background - Temporarily replaced with gradient background */}
-          <div className="absolute inset-0 w-full h-full z-0 bg-gradient-to-br from-purple-900/20 via-blue-900/20 to-indigo-900/20">
-            <div className="w-full h-full flex items-center justify-center">
-              <div className="text-white/30 text-6xl">🌍</div>
-            </div>
+          {/* Globe Background */}
+          <div className="absolute inset-0 w-full h-full z-0">
+            <GlobeErrorBoundary key={globeKey}>
+              <GlobeDemo />
+            </GlobeErrorBoundary>
           </div>
-          {/* Manual retry button - temporarily disabled */}
-          {/* {!isGlobeReady && (
+          {/* Manual retry button (hidden by default) */}
+          {!isGlobeReady && (
             <div className="absolute top-4 right-4 z-20">
               <button
                 onClick={() => {
@@ -194,7 +192,7 @@ export default function HomeHeroSection() {
                 Retry Globe
               </button>
             </div>
-          )} */}
+          )}
           
           {/* Overlay Box with Statistics */}
           <motion.div
